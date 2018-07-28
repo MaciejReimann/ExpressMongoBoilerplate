@@ -4,5 +4,4 @@ mongoose.connect('mongodb://localhost/todo-api');
 
 mongoose.Promise = Promise;
 
-import Todo from 'todo';
-export default Todo;
+export {default} from '../models/todo'; // redirecting in es6

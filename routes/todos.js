@@ -1,12 +1,12 @@
 import express from 'express';
-import Todo from '../models/index'
+import db from '../models/index'
 const router = express.Router();
 
 
 
 router.get('/', (req, res) => {
   res.send('Hello from todos route!')
-  console.log(Todo)
+  console.log(db)
 });
 
 export default router;
